@@ -141,7 +141,7 @@ if __name__ == "__main__":
         data = handle.bulkRead( NXTin.address, 4 )
 
         if data[0] == ACK_STRING and data[1:3].tostring() == 'ok':
-            print 'Acknowledgment string received by the brick'
+            print 'Acknowledgment string received from the brick'
         else:
             print data[1:3]
             print 'No acknowledgment'
