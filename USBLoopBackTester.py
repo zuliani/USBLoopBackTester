@@ -109,7 +109,7 @@ if __name__ == "__main__":
     # - Stream Pipe - Unidirectional
     # -Full & high speed modes only.
     handle.bulkWrite( NXTout.address, data )
-    from test.test_iterlen import len
+    
     # read the response from the brick
     data = handle.bulkRead( NXTin.address, len( USB_ECROBOT_SIGNATURE ) + 1 )
 
